@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int a[10],n,*p,i,f=0;
+    printf("\nEnter array Elements");
+    for(i=0;i<10;i++)
+        scanf("%d",&a[i]);
+    printf("\nEnter the Element to be search\n");
+    scanf("%d",&n);
+    
+    p=a;
+    
+    for(i=0;i<10;i++)
+    {
+        if(*p == n)
+        {
+            f=1;
+            break;
+        }
+        p++;
+    }
+    if(f==1)
+         printf("\nNumber is found");
+    else
+         printf("\nNumber is not found");
+    return 0;
+}
