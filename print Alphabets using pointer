@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    char a[30];
+    int c;
+    char *p;
+    p=a;
+    for(c=0;c<26;c++)
+    {
+        *p=c+'A';
+        p++;
+    }
+    p=a;
+    printf("The Alphabets are:\n");
+    for(c=0;c<26;c++)
+    {
+        printf(" %c ",*p);
+        p++;
+    }
+}
