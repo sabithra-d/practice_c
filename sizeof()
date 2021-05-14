@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    char ch;
+    short s;
+    printf("size of char:%d\n",sizeof(ch));
+    printf("size of short:%d\n",sizeof(s));
+    printf("size of float:%d\n",sizeof(float));
+    return 0;
+    
+}
