@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    char ch = 'A';
+    printf("%c\n",ch);
+    printf("%d",ch);
+    return 0;
+}
+//o/p:
+A
+65
+
+
+
+#include<stdio.h>
+int main()
+{
+    char ch = 258;
+    printf("%d",ch);
+    printf("%c",ch);
+    return 0;
+}
+//o/p:
+2
+garbage value
