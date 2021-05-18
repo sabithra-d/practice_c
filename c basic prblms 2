@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    unsigned short x=-4;
+    printf("%u",x);
+    return 0;
+    
+}
+
+//op:
+65532
