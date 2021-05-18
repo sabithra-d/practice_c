@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    unsigned short x=65538;
+    printf("%u\n",x);
+    printf("%d",x);
+    return 0;
+    
+}
+//op:
+2
+2
