@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    unsigned short x=-32772;
+    printf("%d\n",x);
+    printf("%u",x);
+    return 0;
+    
+}
+
+//op:
+32764
+32764
