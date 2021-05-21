@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int i=0;
+    while(i<3)
+    {
+        printf("Hii\n");
+        i++;
+    }
+return 0;
+}
+//op:
+Hii
+Hii
+Hii
+
+#include<stdio.h>
+int main()
+{
+    int i=0;
+    while(i<0)
+    {
+        printf("Hii\n");
+    }
+return 0;
+}
+
+//op" Nothing is printed.Because condition is false on first execution itself.So the loop will be terminated.
