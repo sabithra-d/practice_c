@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+    int range,i,j,sum;
+    printf("Enter the range:");
+    scanf("%d",&range);
+    for(i=1;i<=range;i++)
+    {
+        sum=0;
+        for(j=1;j<i;j++)
+        {
+            if(i%j == 0)
+            {
+                sum=sum+j;
+            }
+            
+        }
+        if(i == sum)
+        printf("%d is a perfect number.\n",i);
+    }
+}
+10
+6 is a perfect
