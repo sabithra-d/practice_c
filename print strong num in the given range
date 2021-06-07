@@ -1,0 +1,30 @@
+include<stdio.h>
+int main()
+{
+    int limit,n,i,fact,sum,temp,r;
+    printf("Enter the limit :");
+    scanf("%d",&limit);
+    for(n=1;n<=limit;n++)
+    {
+        sum=0;
+        temp=n;
+        while(n>0)
+        {
+            r=n%10;
+            fact=1;
+            for(i=1;i<=r;i++)
+            {
+                fact=fact*i;
+            }
+            sum=sum+fact;
+            n=n/10;
+            
+        }
+        n=temp;
+        if(n==sum)
+        printf("%d is a strong\n",n);
+    }
+return 0;
+}
+limit:1000
+1,2,145
