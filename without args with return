@@ -1,0 +1,36 @@
+AREA OG SQUARE:
+
+#include<stdio.h>
+float add();
+void main()
+{
+    float area=add();
+    printf("%f",area);
+}
+float add()
+{
+    float side;
+    scanf("%f",&side);
+    return side * side;
+}
+    
+
+
+
+
+
+#include<stdio.h>
+int add();
+void main()
+{
+    int result;
+    result=add();
+    printf("%d",result);
+}
+int add()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    return a+b;
+}
+    
