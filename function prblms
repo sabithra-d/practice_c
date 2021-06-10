@@ -1,0 +1,31 @@
+#include<stdio.h>
+void print();
+void main()
+{
+    printf("hello ");
+    print();
+}
+void print()
+{
+    printf("sabi");
+}
+//hello sabi
+
+
+#include<stdio.h>
+void avg(int,int,int,int,int);
+void main()
+{
+    int a,b,c,d,e;
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    avg(a,b,c,d,e);
+}
+void avg(int a,int b,int c,int d,int e)
+{
+    float average;
+    average=(a+b+c+d+e)/5;
+    printf("%f",average);
+    
+}
+1 2 3 4 5
+3.0000
