@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+    int range,l,r,s,sum,temp,i;
+    printf("Enter range:");
+    scanf("%d",&range);
+    for(i=1;i<=range;i++)
+    {
+        temp=i;
+        sum=0;
+        while(i > 0)
+        {
+        
+            r=i % 10;
+            s=r * r * r;
+            sum=sum+s;
+            i=i/10;
+        }
+        i=temp;
+        if(sum == i)
+        {
+            printf("%d\n",i);
+        }
+    }
+}
+range 1000
+1
+153
+370
+371
+407
