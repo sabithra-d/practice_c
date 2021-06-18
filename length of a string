@@ -1,0 +1,16 @@
+#include<stdio.h>
+#define MAX_SIZE 100
+void main()
+{
+    char s[MAX_SIZE];
+    int i,count=0;
+    printf("Enter string:");
+    gets(s);
+    for(i=0;s[i] != '\0'; i++)
+    {
+        count++;
+    }
+    printf("length of array is:%d",count);
+    
+    
+}
