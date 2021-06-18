@@ -1,0 +1,14 @@
+#include<stdio.h>
+#define MAX_SIZE 100
+void main()
+{
+    char s[MAX_SIZE],s1[MAX_SIZE];
+    printf("Enter the string1:");
+    gets(s);
+    printf("Enter the string2:");
+    gets(s1);
+    strcat(s, s1);
+    printf("The result string is:%s ",s);
+    
+    
+}
