@@ -1,0 +1,28 @@
+#include<stdio.h>
+# define MAX_SIZE 100
+void main()
+{
+    char s1[MAX_SIZE],s2[MAX_SIZE];
+    int i,j;
+    printf("Enter the string:");
+    gets(s1);
+    printf("Enter the string 2:");
+    gets(s2);
+    i=0;
+    while(s1[i] != '\0')
+    {
+        i++;
+    }
+    j=0;
+    while(s2[j] != '\0')
+    {
+        s1[i] = s2[j];
+        i++;
+        j++;
+    }
+    s2[j]='\0';
+    printf("The new concatinate string is: %s",s1);
+}
+i like
+pink
+//i like pink
