@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<string.h>
+#define MAX_SIZE 100
+int main()
+{
+    char s1[MAX_SIZE],s2[MAX_SIZE];
+    int result;
+    printf("Enter string 1:");
+    gets(s1);
+    printf("Enter string 2:");
+    gets(s2);
+    result=strcmp(s1,s2);
+    if(result == 0)
+    {
+        printf("Two strings are equal.");
+    }
+    else 
+    {
+        printf("two strings not equal.");
+    }
+    return 0;
+}
+
+
+
+#include<stdio.h>
+#include<string.h>
+#define MAX_SIZE 100
+int main()
+{
+    char s1[MAX_SIZE],s2[MAX_SIZE];
+    int result;
+    printf("Enter string 1:");
+    gets(s1);
+    printf("Enter string 2:");
+    gets(s2);
+    result=strcmp(s1,s2);
+    if(result == 0)
+    {
+        printf("Two strings are equal.");
+    }
+    else if(result < 0)
+    {
+        printf("First string is smaller than second.");
+    }
+    else
+    {
+        printf("First string is greater than second.");
+    }
+    return 0;
+}
