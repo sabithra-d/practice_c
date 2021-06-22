@@ -1,0 +1,20 @@
+#include<stdio.h>
+#define MAX_SIZE 100
+void main()
+{
+    char s[MAX_SIZE];
+    int vowels,consonents,i;
+    vowels=consonents=0;
+    printf("Enter string:");
+    gets(s);
+    for(i=0;s[i] != '\0';i++)
+    {
+        if(s[i] =='A' || s[i] == 'E' || s[i] == 'I'||s[i]=='O'||s[i]=='U'||s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
+            vowels++;
+        else
+            consonents++;
+        
+    }
+    printf("Vowels are:%d\n",vowels);
+    printf("Consonents are:%d\n",consonents);
+}
