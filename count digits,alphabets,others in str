@@ -1,0 +1,29 @@
+#include<stdio.h>
+#define MAX_SIZE 100
+void main()
+{
+    char s[MAX_SIZE];
+    int digits,alphabets,others,i;
+    alphabets=digits=others=0;
+    printf("Enter string:");
+    gets(s);
+    for(i=0;s[i] != '\0';i++)
+    {
+        if((s[i] >= 'A' && s[i] <= 'Z')||(s[i] >= 'a' && s[i] <= 'z'))
+        {
+            alphabets++;
+        }
+        else if(s[i] >= '0' && s[i] <= '9')
+        {
+            digits++;
+        }
+        else
+        {
+            others++;
+        }
+    }
+    printf("Alphabets are:%d\n",alphabets);
+    printf("Digits are:%d\n",digits);
+    printf("Others are:%d\n",others);
+    
+}
